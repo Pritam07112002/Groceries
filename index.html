@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery Bazaar</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+  <!-- adding google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="items-1"> <input type="text" placeholder="Search here...."><button><img class="img-1"
+          src="search.png"></button> </div>
+    <div class="items-2" onclick="home()">Home</div>
+    <div class="items-3" onclick="login()">Login</div>
+    <div class="items-4" onclick="contact()"><a style="color: black; text-decoration: none;"
+        href="mailto: pritam.kundu.21@aot.edu.in">Contact</a></div>
+  </div>
+  <div class="container-1">
+    <div class="items-5">
+      <h1>Welcome to Grocery Bazaar</h1>
+      <h3>Now groceries at your doorstep...</h3>
+      <button class="btn"><a style="text-decoration: none; color: black;" href="#deals">Buy Now</a></button>
+    </div>
+    <div class="items-6"><img class="img-2" src="grocery.png"></div>
+  </div>
+  <div class="container-2">
+    <div class="loginBox">
+      <h3 class="tag">Login</h3>
+      <div class="items-7"><input type="text" placeholder="Enter your name...."></div>
+      <div class="items-7"><input type="number" placeholder="Enter Your mobile number..."></div>
+      <div class="items-7"> <button onclick="otpbtn()" class="btn-1">Get OTP</button> <button onclick="signupBox()"
+          class="btn-1"> Sign
+          Up</button></div>
+      <div id="verified1" style="display: none;" class="items-7"><input type="number" placeholder="Enter OTP...."></div>
+      <div id="verified2" style="display: none;" class="items-7"><button onclick="verifiedbutton()"
+          class="btn-1">Verify</button></div>
+      <p class="otpverified" style="font-size: large;color: rgb(2, 10, 2); text-decoration: none;"></p>
+      <div class="items-8"> <input type="text" placeholder="Enter your name..."></div>
+      <div class="items-8"> <input type="text" placeholder="Enter your mail id..."></div>
+      <div class="items-8"> <input type="number" placeholder="Enter Your mobile number..."></div>
+      <div class="items-8"><button onclick="register()" class="btn-1">Register</button> <button onclick="loginBox()"
+          class="btn-1">Log
+          in</button></div>
+      <p class="register-class" style="font-size: large;color: rgb(2, 10, 2); text-decoration: none;"></p>
+    </div>
+  </div>
+  <h1 id="deals" class="greatdeals" style="text-align: center; font-size: xx-large; text-decoration: underline;">Great
+    deals of all
+    time</h1>
+  <div class="container-3">
+    <div class="items-9"><img class="img-3" src="apple.png">
+      <h1 class="groceries" style="font-size:x-large;">Rs: 129</h1>
+      <details>
+        <summary>Select quantity
+        </summary>
+        <option onclick="apple1()">1kg</option>
+        <option onclick="apple2()">500g</option>
+      </details>
+      <button onclick="apple3()" class="btn-order"
+        style="padding: 5px;border-radius: 12px; background-color: rgb(245, 245, 141); width: 20vw;">Buy</button>
+      <p class="order" style="font-size: large;color: rgb(4, 111, 4);"></p>
+    </div>
+    <div class="items-9"><img class="img-3" src="biscuit.png">
+      <h1 class="groceries" style="font-size:x-large;">Rs: 53</h1>
+      <details>
+        <summary>Select quantity
+        </summary>
+        <option onclick="biscuit1()">500g</option>
+        <option onclick="biscuit2()">250g</option>
+      </details>
+      <button onclick="biscuit3()" class="btn-order"
+        style="padding: 5px;border-radius: 12px; background-color: rgb(245, 245, 141); width: 20vw;">Buy</button>
+      <p class="order" style="font-size: large;color: rgb(4, 111, 4);"></p>
+    </div>
+    <div class="items-9"><img class="img-3" src="cococola.png">
+      <h1 class="groceries" style="font-size:x-large;">Rs: 90</h1>
+      <details>
+        <summary>Select quantity
+        </summary>
+        <option onclick="cococola1()">2 lit</option>
+        <option onclick="cococola2()">1 lit</option>
+      </details>
+      <button class="btn-order" onclick="cococola3()"
+        style="padding: 5px;border-radius: 12px; background-color: rgb(245, 245, 141); width: 20vw;">Buy</button>
+      <p class="order" style="font-size: large;color: rgb(4, 111, 4);"></p>
+    </div>
+    <div class="items-9"><img class="img-3" src="kurkure.png">
+      <h1 class="groceries" style="font-size:x-large;">Rs: 10</h1>
+      <details>
+        <summary>Select quantity
+        </summary>
+        <option onclick="kurkure1()">20g</option>
+        <option onclick="kurkure2()">50g</option>
+      </details>
+      <button class="btn-order" onclick="kurkure3()"
+        style="padding: 5px;border-radius: 12px; background-color: rgb(245, 245, 141); width: 20vw;">Buy</button>
+      <p class="order" style="font-size: large;color: rgb(4, 111, 4);"></p>
+    </div>
+    <div class="items-9"><img class="img-3" src="oil.jpg">
+      <h1 class="groceries" style="font-size:x-large;">Rs: 139</h1>
+      <details>
+        <summary>Select quantity
+        </summary>
+        <option onclick="oil1()">1kg</option>
+        <option onclick="oil2()">500g</option>
+      </details>
+      <button class="btn-order" onclick="oil3()"
+        style="padding: 5px;border-radius: 12px; background-color: rgb(245, 245, 141); width: 20vw;">Buy</button>
+      <p class="order" style="font-size: large;color: rgb(4, 111, 4);"></p>
+    </div>
+    <div class="items-9"><img class="img-3" src="rice.jpg">
+      <h1 class="groceries" style="font-size:x-large;">Rs: 95</h1>
+      <details>
+        <summary>Select quantity
+        </summary>
+        <option onclick="rice1()">1kg</option>
+        <option onclick="rice2()">500g</option>
+      </details>
+      <button class="btn-order" onclick="rice3()"
+        style="padding: 5px;border-radius: 12px; background-color: rgb(245, 245, 141); width: 20vw;">Buy</button>
+      <p class="order" style="font-size: large;color: rgb(4, 111, 4);"></p>
+    </div>
+  </div>
+</body>
+
+</html>

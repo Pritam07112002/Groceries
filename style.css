@@ -1,0 +1,155 @@
+body {
+    background-color: rgb(229, 228, 242);
+}
+
+.container {
+    height: 10vh;
+    display: flex;
+    font-weight: bold;
+    font-size: xx-large;
+    cursor: pointer;
+    flex-direction: row;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.items-2,
+.items-3,
+.items-4 {
+    flex-grow: 1;
+}
+
+.items-2 {
+    text-decoration: underline;
+}
+
+.items-1 {
+    flex-grow: 30;
+}
+
+input {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+
+.img-1 {
+    height: 20px;
+    width: 20px;
+}
+
+.items-5 {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(227, 72, 72);
+    flex-grow: 1;
+}
+
+.container-1 {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.img-2 {
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+}
+
+.btn {
+    padding: 15px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: rgba(223, 223, 86, 0.565);
+    cursor: pointer;
+}
+
+.container-2 {
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.loginBox {
+    height: 40vh;
+    background-color: rgb(220, 169, 169);
+    width: 100vw;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.items-7 {
+    margin: 10px;
+}
+
+.items-8 {
+    margin: 10px;
+    display: none;
+}
+
+.btn-1 {
+    padding: 10px;
+    background-color: rgb(223, 120, 141);
+}
+
+.container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.items-9 {
+    background-color: rgb(237, 199, 199);
+    width: 40vw;
+    height: 50vh;
+    border: 1px solid black;
+}
+
+.img-3 {
+    width: 25vw;
+    height: 30vh;
+}
+
+@media screen and (max-width:1300px) {
+    .container {
+        height: 20vh;
+    }
+
+    .container-1 {
+        height: 105vh;
+    }
+
+    .img-3 {
+        height: 30vh;
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .img-2 {
+        height: 375px;
+        width: 375px;
+        border-radius: 50%;
+    }
+
+    .img-3 {
+        height: 20vh;
+        width: 40vw;
+    }
+
+    .items-9 {
+        height: 40vh;
+    }
+}
