@@ -139,8 +139,8 @@ input {
 
 @media screen and (max-width:600px) {
     .img-2 {
-        height: 375px;
-        width: 375px;
+        height: 250px;
+        width: 250px;
         border-radius: 50%;
     }
 
